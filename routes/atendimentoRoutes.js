@@ -1,4 +1,4 @@
-import { Router } from "express";
+const {Router} = require("express");
 const router = Router();
 
 //Métodos HTTP: GET, POST, PUT, DELETE (dentre outros); 
@@ -21,4 +21,4 @@ router.delete("/atendimento/:id", (req, res) => {
     res.send(`Estamos deletando o atendimento ${id}`)
 })
 
-module.exports = router;
+module.exports = router
