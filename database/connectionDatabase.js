@@ -16,8 +16,6 @@ connection.query('SELECT NOW()', (err, res) => {
   } else {
     console.log('Conectado:', res.rows);
   }
-
-  connection.end();
 });
 
 module.exports = connection;
